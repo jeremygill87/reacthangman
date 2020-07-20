@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from "react";
+import Hangmanbox from "./components/hangmanbox";
+import Header from "./components/header";
+import Lettersbox from "./components/lettersbox";
+import WinLoss from "./components/winlossbox";
+import WordContainer from "./components/wordcontainer";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    // let letterArray = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 
-export default App;
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Header/>
+        <WinLoss/>
+        <WordContainer/>
+        <Lettersbox/>
+        <Hangmanbox/>
+      </div>
+    )
+  }
+}
