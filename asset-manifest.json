@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reacthangman/static/css/main.5f361e03.chunk.css",
+    "main.js": "/reacthangman/static/js/main.01366c4b.chunk.js",
+    "main.js.map": "/reacthangman/static/js/main.01366c4b.chunk.js.map",
+    "runtime-main.js": "/reacthangman/static/js/runtime-main.093917bc.js",
+    "runtime-main.js.map": "/reacthangman/static/js/runtime-main.093917bc.js.map",
+    "static/js/2.87f75564.chunk.js": "/reacthangman/static/js/2.87f75564.chunk.js",
+    "static/js/2.87f75564.chunk.js.map": "/reacthangman/static/js/2.87f75564.chunk.js.map",
+    "index.html": "/reacthangman/index.html",
+    "precache-manifest.61c9ab1a3008edb9a9375e3a536959ba.js": "/reacthangman/precache-manifest.61c9ab1a3008edb9a9375e3a536959ba.js",
+    "service-worker.js": "/reacthangman/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/reacthangman/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.87f75564.chunk.js.LICENSE.txt": "/reacthangman/static/js/2.87f75564.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/reacthangman/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.093917bc.js",
+    "static/js/2.87f75564.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.01366c4b.chunk.js"
+  ]
+}
