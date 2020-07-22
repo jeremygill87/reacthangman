@@ -1,0 +1,34 @@
+/* The whole thing */
+.gameboard {
+    text-align: center;
+}
+
+/* Top banner */
+.hangman-banner {
+    text-align: center;
+}
+
+/* Image div */
+.hangman-box {
+    text-align: center;
+}
+
+/* Guess the word and empty blanks */
+h4, h2, p {
+    text-align: center;
+}
+
+/* Reset button */
+.reset-button {
+    background-color: red;
+    color: white;
+    padding: 16px 24px;
+    font-size: 32px;
+    
+}
+
+/* Letter Buttons */
+.btn-lg {
+    background-color: #E6D3CF;
+    padding: 16px 18px;
+}

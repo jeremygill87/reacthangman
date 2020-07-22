@@ -70,17 +70,17 @@ class Gameboard extends Component {
 
         return (
             <div className="gameboard container">
-                <h1 className="text-center">HangMan React</h1>
-                <div className="text-center">
+                <h1 className="hangman-banner text-center">HangMan React</h1>
+                <div className="hangman-box text-center">
                     <img src={this.props.images[this.state.wrong]} alt="" />
                 </div>
                 <div className="text-center">
                     <h4>Guess the word</h4>
-                    <p>
+                    <h2>
                         {!gameOver ? this.guessedWord() : this.state.answer}
-                    </p>
+                    </h2>
                     <p>{gameOutcome}</p>
-                    <button className="btn btn-info" onClick={this.reset}>Reset</button>
+                    <button className="reset-button btn btn-info" onClick={this.reset}>Reset</button>
                 </div>
             </div>
         )
