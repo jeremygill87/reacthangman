@@ -11,11 +11,12 @@ import Image6 from "./images/9.jpg";
 import Image7 from "./images/10.jpg";
 
 class Gameboard extends Component {
+    //Establish static properties that are never altered
     static defaultProps = {
         images: [Image1, Image2, Image3, Image4, Image5, Image6, Image7],
         maxWrong: 6
     }
-
+    //use constructor to initialize component's state
     constructor (props) {
         super(props);
         this.state = {
@@ -26,6 +27,7 @@ class Gameboard extends Component {
         console.log(this.state)
     }
 
+    //reads the value of the letter that corresponds with the button clicks
     handleInput = e => {
         let letter = e.target.value;
         this.setState(st => ({
@@ -35,10 +37,12 @@ class Gameboard extends Component {
         console.log(this.state)
     }
 
+    //takes answer property, splits the characters, then assigns _'s for all characters within the answer that have not been guessed yet
     guessedWord() {
         return this.state.answer.split("").map(letter => (this.state.guessed.has(letter) ? letter : " _ "));
     }
 
+    //renders letter buttons and assigns letter values to each button.  "Disabled" is a property designed to prevent duplicate letter guesses
     renderButtons() {
         return "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map(letter => (
             <button class="btn btn-lg btn-primary m-2" key={letter} value={letter} onClick={this.handleInput} disabled={this.state.guessed.has(letter)}>
@@ -47,6 +51,7 @@ class Gameboard extends Component {
         ));
     }
 
+    //Reset button for when you win or lose or just want to give up
     reset = () => {
         this.setState({
             wrong: 0,
@@ -56,6 +61,7 @@ class Gameboard extends Component {
     }
 
     render() {
+        //gameOutcome generates the buttons upon new game, and changes string properties based on whether or not the player wins
         const winner = this.guessedWord().join("") === this.state.answer;
         const gameOver = this.state.wrong >= this.props.maxWrong;
         let gameOutcome = this.renderButtons();
